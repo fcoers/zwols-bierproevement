@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WC2PC8BQQQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WC2PC8BQQQ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speciaalbierfestival Zwolle - 20 juni 2026 Zwolle-Zuid - Zwols Bierproevement</title>
+  <meta name="description" content="Speciaalbierfestival Zwolle-Zuid. Proef heerlijke speciaalbieren van 15 regionale brouwers tijdens het Zwols Bierproevement, 20 juni 2026, 14:00 - 19:00 uur, Warepark De Vrijheid Zwolle-Zuid." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:   #2C6D7F;
+      --orange: #F18F00;
+      --dark:   #1a4552;
+      --gray:   #7A7A7A;
+      --white:  #ffffff;
+      --light:  #f4f8f9;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--gray);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ───────────────────────────────────────────── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 999;
+      background: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 72px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.25);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .logo-img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+      font-weight: 400;
+      font-size: 12px;
+      opacity: .8;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    nav { display: flex; align-items: center; gap: 32px; }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      opacity: .9;
+      transition: opacity .2s, color .2s;
+    }
+
+    nav a:hover { opacity: 1; color: var(--orange); }
+
+    .nav-ticket {
+      background: var(--orange);
+      color: var(--white) !important;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-weight: 700 !important;
+      opacity: 1 !important;
+      transition: background .2s, transform .2s !important;
+    }
+
+    .nav-ticket:hover { background: #d47e00; transform: translateY(-1px); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: var(--orange);
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+    }
+
+    /* ── HERO ─────────────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,.18) 0%, rgba(0,0,0,.45) 50%, rgba(0,0,0,.65) 100%),
+        url('hero-nieuw.png') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 7vw, 72px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 16px rgba(0,0,0,.75), 0 4px 32px rgba(0,0,0,.5);
+    }
+
+    .hero h1 em {
+      color: var(--orange);
+      font-style: normal;
+    }
+
+    .hero-sub {
+      font-size: clamp(16px, 2.5vw, 22px);
+      color: rgba(255,255,255,.95);
+      font-weight: 600;
+      margin-bottom: 32px;
+      letter-spacing: .02em;
+      text-shadow: 0 1px 8px rgba(0,0,0,.7);
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+
+    .hero-tags span {
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      color: var(--white);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-info {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .hero-info-block {
+      text-align: center;
+    }
+
+    .hero-info-block .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 4px;
+    }
+
+    .hero-info-block .value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 34px;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: .04em;
+      transition: transform .2s, box-shadow .2s, background .2s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(241,143,0,.4);
+    }
+
+    .btn-primary:hover { background: #d47e00; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(241,143,0,.5); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,.6);
+    }
+
+    .btn-outline:hover { background: rgba(255,255,255,.1); transform: translateY(-2px); }
+
+    /* wave */
+    .wave {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .wave svg { display: block; width: 100%; }
+
+    /* ── SECTION BASE ─────────────────────────────────────── */
+    section { padding: 80px 24px; }
+
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      color: var(--teal);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .section-intro {
+      font-size: 17px;
+      color: var(--gray);
+      max-width: 620px;
+      line-height: 1.7;
+    }
+
+    /* ── OVER HET EVENEMENT ───────────────────────────────── */
+    .about { background: var(--white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 48px;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-img {
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--teal) 0%, var(--dark) 100%);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 100px;
+      height: 100px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 800;
+      box-shadow: 0 4px 20px rgba(241,143,0,.4);
+    }
+
+    .about-badge .num { font-size: 28px; line-height: 1; }
+    .about-badge .unit { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    .stat-card {
+      background: var(--light);
+      border-radius: 12px;
+      padding: 20px;
+      border-left: 4px solid var(--orange);
+    }
+
+    .stat-card .num {
+      font-size: clamp(14px, 4vw, 32px);
+      font-weight: 800;
+      color: var(--teal);
+      line-height: 1;
+      word-break: break-word;
+    }
+
+    .stat-card .desc {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 4px;
+    }
+
+    /* ── BROUWERIJEN ──────────────────────────────────────── */
+    .breweries { background: var(--light); }
+
+    .brewery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .brewery-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform .3s, box-shadow .3s;
+      box-shadow: 0 2px 16px rgba(0,0,0,.06);
+    }
+
+    .brewery-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(44,109,127,.15); }
+
+    .brewery-card-head {
+      background: linear-gradient(135deg, var(--teal), var(--dark));
+      background-size: cover;
+      background-position: center;
+      padding: 0;
+      position: relative;
+      height: 200px;
+    }
+
+    .brewery-head-overlay {
+      background: linear-gradient(to top, rgba(0,0,0,.78) 0%, rgba(0,0,0,.2) 55%, transparent 100%);
+      padding: 20px 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-sizing: border-box;
+    }
+
+    .brewery-name {
+      color: var(--white);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .brewery-city {
+      color: rgba(255,255,255,.7);
+      font-size: 12px;
+      margin-top: 2px;
+      font-weight: 600;
+      letter-spacing: .04em;
+    }
+
+    .brewery-card-body {
+      padding: 20px 24px;
+    }
+
+    .brewery-desc {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .brewery-link {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--teal);
+      text-decoration: none;
+      letter-spacing: .03em;
+      border-bottom: 1px solid rgba(44,109,127,.3);
+      padding-bottom: 1px;
+      transition: color .2s, border-color .2s;
+    }
+
+    .brewery-link:hover { color: var(--orange); border-color: var(--orange); }
+
+    /* Center last brewery card when grid has odd number */
+    .brewery-grid > .brewery-card:last-child:nth-child(3n+1) {
+      grid-column: 2;
+    }
+
+    .brewery-card--teaser {
+      border: 2px dashed rgba(44,109,127,.25);
+      background: transparent;
+      box-shadow: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+    }
+    .brewery-card--teaser:hover { transform: none; box-shadow: none; }
+    .brewery-teaser-inner { text-align: center; padding: 32px 24px; }
+    .brewery-teaser-icon { font-size: 32px; margin-bottom: 12px; opacity: .5; }
+    .brewery-teaser-title { font-size: 15px; font-weight: 700; color: var(--teal); margin-bottom: 8px; }
+    .brewery-teaser-text { font-size: 13px; color: var(--gray); line-height: 1.6; margin: 0; opacity: .8; }
+
+    /* ── MASTERCLASS ──────────────────────────────────────── */
+    .masterclass { background: var(--teal); }
+
+    .masterclass .section-title { color: var(--white); }
+    .masterclass .section-label { color: var(--orange); }
+    .masterclass .section-intro { color: rgba(255,255,255,.85); max-width: 700px; }
+
+    .mc-feature-card {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 20px;
+      padding: 32px 36px;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      margin-top: 48px;
+      backdrop-filter: blur(4px);
+    }
+
+    .mc-badge {
+      width: 96px;
+      height: 96px;
+      background: var(--white);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      padding: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    }
+
+    .mc-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .mc-org {
+      color: var(--white);
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
+
+    .mc-location-tag {
+      font-size: 13px;
+      color: var(--orange);
+      font-weight: 700;
+      letter-spacing: .04em;
+      margin-bottom: 14px;
+    }
+
+    .mc-desc {
+      color: rgba(255,255,255,.8);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .mc-info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .mc-info-item {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 14px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+
+    .mc-info-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .mc-info-title {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .mc-info-desc {
+      color: rgba(255,255,255,.7);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* ── WEDSTRIJD ────────────────────────────────────────── */
+    .wedstrijd { background: var(--light); }
+
+    .wedstrijd-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+      margin-top: 48px;
+    }
+
+    .wedstrijd-info p {
+      font-size: 15px;
+      color: var(--gray);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .wedstrijd-cta { margin-top: 32px; }
+
+    .wedstrijd-cta-note {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+
+    .wedstrijd-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .wstep {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 20px 24px;
+      box-shadow: 0 2px 12px rgba(44,109,127,.08);
+    }
+
+    .wstep-num {
+      width: 36px;
+      height: 36px;
+      background: var(--orange);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .wstep-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 5px;
+    }
+
+    .wstep p {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ── LOCATIE ──────────────────────────────────────────── */
+    .locatie { background: var(--white); }
+
+    .locatie-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      margin-top: 48px;
+    }
+
+    .locatie-map {
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #e8f4f7, #c5e4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(44,109,127,.1);
+    }
+
+    .locatie-map .map-icon { font-size: 56px; margin-bottom: 12px; }
+    .locatie-map .map-text { font-size: 15px; font-weight: 700; color: var(--teal); }
+    .locatie-map .map-sub { font-size: 13px; color: var(--gray); margin-top: 4px; }
+
+    .locatie-info { display: flex; flex-direction: column; gap: 20px; }
+
+    .info-block {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(241,143,0,.12);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .info-content .info-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 3px;
+    }
+
+    .info-content p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* ── FAQ ──────────────────────────────────────────────── */
+    .faq { background: var(--light); }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 48px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px;
+      border-left: 4px solid transparent;
+      transition: border-color .2s;
+      cursor: pointer;
+    }
+
+    .faq-item:hover { border-left-color: var(--orange); }
+
+    .faq-q {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .faq-q::after {
+      content: '→';
+      color: var(--orange);
+      flex-shrink: 0;
+    }
+
+    .faq-a {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* ── CTA BANNER ───────────────────────────────────────── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--orange), #e07800);
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .cta-banner h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .cta-banner p {
+      font-size: 17px;
+      color: rgba(255,255,255,.85);
+      max-width: 520px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    .btn-white {
+      background: var(--white);
+      color: var(--orange);
+    }
+
+    .btn-white:hover { background: rgba(255,255,255,.9); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.15); }
+
+    /* ── FOOTER ───────────────────────────────────────────── */
+    footer {
+      background: var(--orange);
+      color: var(--white);
+      padding: 60px 24px 32px;
+    }
+
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.25);
+    }
+
+    .footer-brand .logo-text { color: var(--white); font-size: 20px; margin-bottom: 12px; display: block; }
+    .footer-brand p { font-size: 14px; color: rgba(255,255,255,.8); line-height: 1.7; max-width: 320px; }
+
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      color: rgba(255,255,255,.6);
+    }
+
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+    .footer-col ul li a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      opacity: .9;
+      transition: opacity .2s;
+    }
+
+    .footer-col ul li a:hover { opacity: 1; text-decoration: underline; }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .social-link {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background .2s;
+    }
+
+    .social-link:hover { background: rgba(255,255,255,.35); }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 13px;
+      color: rgba(255,255,255,.7);
+    }
+
+    .footer-bottom a { color: rgba(255,255,255,.8); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--white); }
+
+    /* ── SCROLL ANIMATIONS ────────────────────────────────── */
+    .animate-in {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .animate-in.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────────── */
+    @media (max-width: 900px) {
+      header { padding: 0 20px; }
+
+      nav { display: none; }
+      nav.open { display: flex; flex-direction: column; position: fixed; top: 72px; left: 0; right: 0; background: var(--teal); padding: 20px; gap: 16px; border-top: 1px solid rgba(255,255,255,.15); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+
+      .hamburger { display: flex; }
+
+      .about-grid,
+      .locatie-grid,
+      .wedstrijd-grid { grid-template-columns: 1fr; }
+
+      .about-grid > * { min-width: 0; }
+      .about-visual { overflow: hidden; border-radius: 16px; }
+      .about-badge { right: 12px; bottom: 12px; }
+
+      .brewery-grid { grid-template-columns: 1fr; }
+      .brewery-grid > .brewery-card:last-child:nth-child(3n+1) { grid-column: auto; }
+
+      .faq-grid { grid-template-columns: 1fr; }
+
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+
+      .mc-feature-card { flex-direction: column; }
+
+      .mc-info-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        background:
+          linear-gradient(to bottom, rgba(0,0,0,.18) 0%, rgba(0,0,0,.45) 50%, rgba(0,0,0,.65) 100%),
+          url('hero-mobile.png') center/cover no-repeat;
+      }
+
+      section { padding: 60px 16px; }
+
+      .brewery-grid { grid-template-columns: 1fr; }
+
+      .about-stats { grid-template-columns: 1fr 1fr; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a class="logo" href="#">
+      <img src="Logo Kringdagen.svg" alt="Zwols Bierproevement" class="logo-img">
+      <div class="logo-text">
+        Zwols Bierproevement
+        <span>Zwolle · 2026</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="nav">
+      <a href="#over">Over</a>
+      <a href="#brouwerijen">Brouwerijen</a>
+      <a href="#masterclass">Masterclass</a>
+      <a href="#wedstrijd">Wedstrijd</a>
+      <a href="#locatie">Locatie</a>
+      <a href="#faq" class="nav-ticket">FAQ</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">Zaterdag 20 juni 2026</div>
+    <h1>Zwols<br><em>Bierproevement</em></h1>
+    <p class="hero-sub">Onderdeel van de Kringdagen — het Zwolle-Zuid festival</p>
+
+    <div class="hero-tags">
+      <span>Speciaalbier</span>
+      <span>15 Brouwerijen</span>
+      <span>Masterclasses</span>
+      <span>Foodtrucks</span>
+      <span>Bierkennis</span>
+      <span>Gratis toegang</span>
+    </div>
+
+    <div class="hero-info">
+      <div class="hero-info-block">
+        <div class="label">Datum</div>
+        <div class="value">Za 20 juni 2026</div>
+      </div>
+      <div class="hero-info-block">
+        <div class="label">Tijd</div>
+        <div class="value">14:00 – 19:00</div>
+      </div>
+      <div class="hero-info-block">
+        <div class="label">Locatie</div>
+        <div class="value">Warepark De Vrijheid</div>
+      </div>
+      <div class="hero-info-block">
+        <div class="label">Entree</div>
+        <div class="value">Gratis</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#brouwerijen" class="btn btn-primary">Bekijk brouwers</a>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave" style="background:var(--white)">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C360,60 1080,0 1440,60 L1440,0 Z" fill="#111111" opacity=".2"/>
+      <path d="M0,30 C480,0 960,60 1440,20 L1440,0 L0,0 Z" fill="#111111"/>
+    </svg>
+  </div>
+
+  <!-- OVER HET EVENEMENT -->
+  <section class="about" id="over">
+    <div class="container">
+      <p class="section-label">Over het evenement</p>
+      <h2 class="section-title">Lokaal gebrouwen,<br>met passie gepresenteerd</h2>
+      <p class="section-intro">Het Zwols Bierproevement zet de lokale en regionale ambachtelijke brouwerijen in het spotlicht. Ontmoet de mensen achter de bieren en proef speciaalbieren uit Zwolle en verre omstreken.</p>
+
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img" style="background-image:url('image.webp')">
+          </div>
+          <div class="about-badge">
+            <span class="num">15</span>
+            <span class="unit">Brouwerijen</span>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:16px;line-height:1.8;color:var(--gray);margin-bottom:28px;">
+            Het Zwols Bierproevement draait om lokale trots. De meeste deelnemende brouwerijen komen uit Zwolle zelf of de directe omgeving — van Assendorp tot Wijhe, van Marslanden tot het Vechtdal. Ambachtelijk, kleinschalig en met passie gebrouwen. Dit jaar verwelkomen we ook brouwerijen van verder weg — uit Friesland, Zeeland en de rest van Nederland.
+          </p>
+          <p style="font-size:16px;line-height:1.8;color:var(--gray);margin-bottom:28px;">
+            Praat met de brouwers zelf, volg een masterclass bierproeven en ontdek jouw nieuwe favoriete speciaalbier. De toegang is volledig gratis. Proeven doe je via een proefmuntjessysteem, en de foodtrucks zorgen voor de perfecte hapjes.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="num">50+</div>
+              <div class="desc">Verschillende bieren</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">15</div>
+              <div class="desc">Deelnemende brouwerijen</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">Gratis</div>
+              <div class="desc">Toegang voor iedereen</div>
+            </div>
+            <div class="stat-card">
+              <div class="num">Masterclass</div>
+              <div class="desc">Masterclass bierproeven</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave" style="background:var(--light)">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C480,40 960,0 1440,50 L1440,0 L0,0 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- BROUWERIJEN -->
+  <section class="breweries" id="brouwerijen">
+    <div class="container">
+      <p class="section-label">Deelnemende brouwerijen</p>
+      <h2 class="section-title">Ontmoet de brouwers</h2>
+      <p class="section-intro">Dit jaar verwelkomen we 15 gepassioneerde brouwerijen — elk met een eigen signatuur en verhaal. Van lokaal tot regionaal, van klassiek tot experimenteel.</p>
+
+      <div class="brewery-grid">
+
+        <!-- 1. Brouwerij Allema -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-allema.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Brouwerij Allema</div>
+              <div class="brewery-city">Zwolle — Marslanden</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Zwols familiebedrijf van de broers Jasper en Joost Allema. Ze brouwen karaktervolle speciaalbieren als de Broers Bier, Goed Huwelijk en Moeders Mooiste — elk met een eigen verhaal en een uitgesproken smaakprofiel. Brouwen doen ze met lokale ingrediënten en veel liefde voor het vak.</p>
+            <a href="https://www.brouwerijallema.nl" target="_blank" rel="noopener" class="brewery-link">brouwerijallema.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 2. Axes Castellum -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-axes-castellum.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Axes Castellum</div>
+              <div class="brewery-city">Zwolle — Assendorp</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Kloosterbier gebrouwen in de kelders van het Dominicaner­klooster in Assendorp. Axes Castellum — Latijn voor Assendorp — brouwt puur bier met eeuwenoude ingrediënten zoals gruut en koriander, gebaseerd op de Formula Antiqua uit 1576.</p>
+            <a href="https://axes-castellum.nl" target="_blank" rel="noopener" class="brewery-link">axes-castellum.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 3. CO&CO Craft Beers -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-coco-craftbeers.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">CO&amp;CO Craft Beers</div>
+              <div class="brewery-city">Zwolle</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Coen &amp; Coers zijn twee enthousiaste Zwolse hobbybrouwers die van hun passie een vak maakten. Ze brouwen met ambachtelijke mout uit het Vechtdal en werken samen met Brouwerij Allema voor de productie van hun recepten.</p>
+            <a href="https://coco-craftbeers.nl" target="_blank" rel="noopener" class="brewery-link">coco-craftbeers.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 4. Grutte Pier -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-grutte-pier.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Grutte Pier Brouwerij</div>
+              <div class="brewery-city">Bartlehiem, Friesland</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Ambachtelijke Friese brouwerij gevestigd in een voormalige scheepswerf aan de Dokkumer Ee. Grutte Pier — vernoemd naar de legendarische Friese vrijheidsstrijder — brouwt Belgisch geïnspireerde speciaalbieren als tripel, blonde en quadrupel, en is inmiddels een van de bekendste speciaalbiermerken van Friesland.</p>
+            <a href="https://gruttepierbrouwerij.nl" target="_blank" rel="noopener" class="brewery-link">gruttepierbrouwerij.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 5. Jokkebrok -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-jokkebrok.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Jokkebrok Brouwerij</div>
+              <div class="brewery-city">Oldebroek, Gelderland</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Speelse brouwerij uit Oldebroek, opgericht in 2018. Jokkebrok combineert traditionele monnikenstijlen met eigen creatieve recepturen — van blonde ales en witbier tot tripel en bockbier. Altijd met een knipoog en een flinke dosis ambacht.</p>
+            <a href="https://jokkebrokbrouwerij.nl" target="_blank" rel="noopener" class="brewery-link">jokkebrokbrouwerij.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 6. Milky Road Brewery -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-milky-road.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Milky Road Brewery</div>
+              <div class="brewery-city">Zeeland, Noord-Brabant</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Brouwerij van Ramon en Saskia van Dam met filmisch geïnspireerde biernamen en opvallende labels. Milky Road brouwt smaakvolle speciaalbieren met karakter en een verhaal, zoals de Porter on the Orient Express en Alice Through the Lemongrass.</p>
+            <a href="https://www.milkyroadbrewery.nl" target="_blank" rel="noopener" class="brewery-link">milkyroadbrewery.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 7. Taste of the Wolf -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-taste-of-the-wolves.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Taste of the Wolve</div>
+              <div class="brewery-city">Oosterwolde, Gelderland</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Brouwerij uit het Gelderse Oosterwolde met een uitgesproken karakter. Taste of the Wolve maakt eerlijk en smaakvol bier dat gemaakt is om samen van te genieten — rondom de tafel, met vrienden, met herinneringen.</p>
+            <a href="https://tasteofthewolve.nl" target="_blank" rel="noopener" class="brewery-link">tasteofthewolve.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 8. Vikingbeer -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-viking.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Vikingbeer</div>
+              <div class="brewery-city">Lelystad</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Vikingbeer brengt de beste Noorse speciaalbieren naar Nederland. Als gespecialiseerd importeur selecteren zij authentieke Scandinavische brouwsels die je nergens anders vindt — bier met verhaal, karakter en de nuchterheid van het noorden.</p>
+            <a href="https://vikingbeer.nl" target="_blank" rel="noopener" class="brewery-link">vikingbeer.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 9. De Snor -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-de-snor.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Brouwerij De Snor</div>
+              <div class="brewery-city">Velp, Gelderland</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">No-nonsense ambachtelijke brouwerij uit Velp, gevestigd in een duurzaam verbouwde voormalige autogarage. Opgericht in 2015 brouwt De Snor zuivere speciaalbieren met uitgesproken smaken: de Gele Snor blonde, de Stoere Snor IPA en het verfrissende Snor Witje.</p>
+            <a href="https://brouwerijdesnor.nl" target="_blank" rel="noopener" class="brewery-link">brouwerijdesnor.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 10. Zwols Brouwtheater -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-brouwtheater.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Zwols Brouwtheater</div>
+              <div class="brewery-city">Zwolle</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Een unieke combinatie van brouwerij, proeflokaal en brouwworkshops midden in Zwolle. Bij het Brouwtheater kun je niet alleen genieten van eigen gebrouwen speciaalbieren, maar ook zelf leren brouwen onder begeleiding van ervaren brouwers.</p>
+            <a href="https://brouwtheaterzwolle.nl" target="_blank" rel="noopener" class="brewery-link">brouwtheaterzwolle.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 11. Huttenkloas -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-huttenkloas.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Huttenkloas</div>
+              <div class="brewery-city">Albergen, Overijssel</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Eigenzinnige brouwerij uit Albergen die al sinds 2000 speciaalbieren maakt. Met meer dan honderd verschillende biervarianten per jaar — van Belgische stijlen tot IPA's en stouts — heeft Huttenkloas ook internationaal naam gemaakt, onder meer bij de Brussels Beer Challenge.</p>
+            <a href="https://huttenkloas.nl" target="_blank" rel="noopener" class="brewery-link">huttenkloas.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 12. Chaos Bieren -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-chaos.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Chaos Bieren</div>
+              <div class="brewery-city">Wijhe, Overijssel</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Kleine ambachtelijke brouwerij uit Wijhe, gestart als hobbybrouwers in 2018 en in 2020 officieel van start gegaan. Chaos brouwt met passie, ervaring en een flinke dosis spontaniteit — want chaos hoort bij het leven, en goed bier ook.</p>
+            <a href="https://www.chaosbieren.nl" target="_blank" rel="noopener" class="brewery-link">chaosbieren.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 13. Brouwerij Klein Duimpje -->
+        <div class="brewery-card">
+          <div class="brewery-card-head" style="background-image:url('brewery-klein-duimpje.jpg')">
+            <div class="brewery-head-overlay">
+              <div class="brewery-name">Brouwerij Klein Duimpje</div>
+              <div class="brewery-city">Hillegom, Zuid-Holland</div>
+            </div>
+          </div>
+          <div class="brewery-card-body">
+            <p class="brewery-desc">Eén van de meest gerenommeerde ambachtelijke brouwerijen van Nederland, opgericht in 1997 in de Bollenstreek. Met meer dan 40 bierstijlen in het assortiment — van tripel tot barrel-aged porter en glutenvrije bieren — zijn ze een begrip in de speciaalbierwereld.</p>
+            <a href="https://kleinduimpje.nl" target="_blank" rel="noopener" class="brewery-link">kleinduimpje.nl ↗</a>
+          </div>
+        </div>
+
+        <!-- 14. Teaser -->
+        <div class="brewery-card brewery-card--teaser">
+          <div class="brewery-teaser-inner">
+            <div class="brewery-teaser-icon">🍺</div>
+            <div class="brewery-teaser-title">Binnenkort bekendgemaakt</div>
+            <p class="brewery-teaser-text">Er komt nog een verrassing bij. Volg ons voor de aankondiging!</p>
+          </div>
+        </div>
+
+        <!-- 15. Teaser -->
+        <div class="brewery-card brewery-card--teaser">
+          <div class="brewery-teaser-inner">
+            <div class="brewery-teaser-icon">🍺</div>
+            <div class="brewery-teaser-title">Binnenkort bekendgemaakt</div>
+            <p class="brewery-teaser-text">Er komt nog een verrassing bij. Volg ons voor de aankondiging!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave" style="background:var(--teal)">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C480,50 960,0 1440,50 L1440,0 L0,0 Z" fill="#f4f8f9"/>
+    </svg>
+  </div>
+
+  <!-- MASTERCLASS -->
+  <section class="masterclass" id="masterclass">
+    <div class="container">
+      <p class="section-label">Masterclass bierproeven</p>
+      <h2 class="section-title">Leer proeven als een kenner</h2>
+      <p class="section-intro">Gedurende het hele proevement organiseert <strong style="color:var(--orange)">Bierproefgenootschap Gij Zult Genieten</strong> uit Zwolle doorlopende masterclasses bierproeven. Deelnemen zonder aanmelding — gewoon langskomen!</p>
+
+      <div class="mc-feature-card">
+        <div class="mc-badge">
+          <img src="Logo-GZG.png" alt="Bierproefgenootschap Gij Zult Genieten">
+        </div>
+        <div>
+          <div class="mc-org">Bierproefgenootschap<br>Gij Zult Genieten</div>
+          <div class="mc-location-tag">📍 Zwolle</div>
+          <p class="mc-desc">Een Zwols gezelschap van bevlogen bierkenners dat de kunst van het bierproeven deelt met iedereen die meer wil weten over speciaalbier. Met jarenlange ervaring en een aanstekelijk enthousiasme nemen zij je stap voor stap mee door de wereld van smaak, aroma en brouwkunst. Of je nu net begint of al jaren bierliefhebber bent — de masterclass is voor iedereen toegankelijk en leerzaam.</p>
+        </div>
+      </div>
+
+      <div class="mc-info-grid">
+        <div class="mc-info-item">
+          <div class="mc-info-icon">⏱️</div>
+          <div class="mc-info-title">Doorlopend</div>
+          <div class="mc-info-desc">De masterclasses zijn het hele proevement door te volgen — geen vaste aanvangstijden, gewoon langskomen wanneer het jou uitkomt.</div>
+        </div>
+        <div class="mc-info-item">
+          <div class="mc-info-icon">✅</div>
+          <div class="mc-info-title">Geen aanmelding</div>
+          <div class="mc-info-desc">Schuif gewoon aan! Er is geen voorafgaande aanmelding vereist. Iedereen is welkom, van beginner tot doorgewinterde bierliefhebber.</div>
+        </div>
+        <div class="mc-info-item">
+          <div class="mc-info-icon">🧠</div>
+          <div class="mc-info-title">Test je bierkennis</div>
+          <div class="mc-info-desc">Doe de bierquiz en test hoeveel je weet van speciaalbier.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave teal → light -->
+  <div class="wave" style="background:var(--light)">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C360,50 1080,0 1440,40 L1440,0 L0,0 Z" fill="#2C6D7F"/>
+    </svg>
+  </div>
+
+  <!-- HOBBYBROUW WEDSTRIJD -->
+  <section class="wedstrijd" id="wedstrijd">
+    <div class="container">
+      <p class="section-label">Hobbybrouw wedstrijd</p>
+      <h2 class="section-title">Brouw jij het beste bier van Zwolle?</h2>
+      <p class="section-intro">Hobbybrouwers uit Zwolle en omgeving meten zich in een eigen wedstrijd. Meld je bier aan en laat het beoordelen door erkende keurmeesters van het BKG.</p>
+
+      <div class="wedstrijd-grid">
+        <div class="wedstrijd-info">
+          <p>Het Zwols Bierproevement organiseert een hobbybrouw wedstrijd voor thuisbrouwers uit de regio. Jouw bier wordt vakkundig gekeurd door keurmeesters van het <strong style="color:var(--teal)">Bier Keurmeesters Gilde (BKG)</strong> — de organisatie voor het objectief beoordelen van speciaalbieren in Nederland.</p>
+          <p>De beste inzendingen worden beloond tijdens het bierproevement. Deelname kost € 7,50 per bier.</p>
+          <div class="wedstrijd-cta">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjNU4oRDkt6t1rmQYIIRyx_olvEDvXKhtSEN5IsqhnjXJGHA/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary">Meld je bier aan →</a>
+            <p class="wedstrijd-cta-note">Aanmelden voor 1 mei</p>
+          </div>
+        </div>
+
+        <div class="wedstrijd-steps">
+          <div class="wstep">
+            <div class="wstep-num">1</div>
+            <div>
+              <div class="wstep-title">Aanmelden</div>
+              <p>Meld je bier aan via het formulier. Geef aan welke bierstijl je hebt gebrouwen en wat jouw bier bijzonder maakt. Na aanmelding ontvang je instructies voor het inleveren van je bier.</p>
+            </div>
+          </div>
+          <div class="wstep">
+            <div class="wstep-num">2</div>
+            <div>
+              <div class="wstep-title">Bier inleveren bij Grand Café Zuijdt</div>
+              <p>Lever je bier in tussen 1 en 19 mei bij Grand Café Zuijdt. Breng per bier 2 flesjes mee.</p>
+            </div>
+          </div>
+          <div class="wstep">
+            <div class="wstep-num">3</div>
+            <div>
+              <div class="wstep-title">Keuring door het BKG</div>
+              <p>Erkende keurmeesters van het Bier Keurmeesters Gilde beoordelen je bier op smaak, aroma, uiterlijk en stijlconformiteit.</p>
+            </div>
+          </div>
+          <div class="wstep">
+            <div class="wstep-num">4</div>
+            <div>
+              <div class="wstep-title">Prijsuitreiking tijdens het bierproevement</div>
+              <p>De winnaars worden bekendgemaakt en beloond tijdens het Zwols Bierproevement op zaterdag 20 juni.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave light → white -->
+  <div class="wave" style="background:var(--white)">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C480,50 960,0 1440,50 L1440,0 L0,0 Z" fill="#f4f8f9"/>
+    </svg>
+  </div>
+
+  <!-- LOCATIE -->
+  <section class="locatie" id="locatie">
+    <div class="container">
+      <p class="section-label">Locatie &amp; bereikbaarheid</p>
+      <h2 class="section-title">Warepark De Vrijheid, Zwolle</h2>
+      <p class="section-intro">Warepark De Vrijheid is goed bereikbaar met de auto, fiets of stadsbus — en biedt volop ruimte voor een dag vol bierbeleving.</p>
+
+      <div class="locatie-grid">
+        <div class="locatie-map" style="background:none;padding:0;border:none">
+          <img src="plattegrond.png" alt="Plattegrond Warepark De Vrijheid" style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:block">
+        </div>
+
+        <div class="locatie-info">
+
+          <div class="info-block">
+            <div class="info-icon">🚗</div>
+            <div class="info-content">
+              <div class="info-title">Auto &amp; parkeren</div>
+              <p>Ruime parkeergelegenheid aanwezig bij Warepark De Vrijheid. Parkeren kan in de parkeergarage van Winkelcentrum Zwolle-Zuid.</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">🚲</div>
+            <div class="info-content">
+              <div class="info-title">Fiets</div>
+              <p>Je kunt je fiets kwijt op het evenementsterrein zelf. Zwolle is uitstekend per fiets te bereiken vanuit de omliggende wijken.</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">🚌</div>
+            <div class="info-content">
+              <div class="info-title">Stadsbus</div>
+              <p>Neem lijn 8 naar halte <strong>WKC Zuid</strong>. Van daaruit is het evenementsterrein op loopafstand.</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">♿</div>
+            <div class="info-content">
+              <div class="info-title">Toegankelijkheid</div>
+              <p>Het evenement is volledig rolstoeltoegankelijk. Voor vragen over toegankelijkheid: info@zwolsbierproevement.nl.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- wave -->
+  <div class="wave" style="background:var(--light)">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C360,50 1080,0 1440,50 L1440,0 L0,0 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <p class="section-label">Veelgestelde vragen</p>
+      <h2 class="section-title">Alles wat je wil weten</h2>
+
+      <div class="faq-grid">
+
+        <div class="faq-item">
+          <div class="faq-q">Kan ik alcoholvrije bieren proeven?</div>
+          <div class="faq-a">Ja! Meerdere deelnemende brouwerijen bieden alcoholvrije speciaalbieren aan.</div>
+        </div>
+
+
+        <div class="faq-item">
+          <div class="faq-q">Hoe werkt het proefmuntjessysteem?</div>
+          <div class="faq-a">Op het terrein koop je een proefglas en proefmunten bij de kassa. Met elke munt proef je een speciaalbier bij één van de deelnemende stands.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Is er eten aanwezig?</div>
+          <div class="faq-a">Ja! Er zijn diverse foodtrucks aanwezig met allerlei lekkernijen. Voor elk wat wils.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Hoe meld ik me aan als brouwerij?</div>
+          <div class="faq-a">Brouwerijen kunnen zich aanmelden via <a href="https://www.kringdagen.nl" target="_blank" rel="noopener" style="color:var(--teal);font-weight:700">kringdagen.nl</a>.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Wat als het regent?</div>
+          <div class="faq-a">Het evenement gaat door bij regen. Er zijn voldoende overdekte areas beschikbaar.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Is de entree echt gratis?</div>
+          <div class="faq-a">Ja! De toegang tot het evenementsterrein is volledig gratis. Het proeven van bieren wordt betaald met munten, die je op het terrein kunt kopen bij de kassa.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Hoe kom ik er met het OV?</div>
+          <div class="faq-a">Neem stadsbus lijn 8 naar halte <strong>WKC Zuid</strong>. Van daar is Warepark De Vrijheid op loopafstand te bereiken.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container" style="text-align:center">
+      <h2>Zaterdag 20 juni — 14:00 tot 19:00 uur</h2>
+      <p>Kom langs in Warepark De Vrijheid en proef de beste speciaalbieren uit de regio. Toegang gratis, voor iedereen vanaf 18 jaar.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="mailto:info@zwolsbierproevement.nl" class="btn btn-white">Contact opnemen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOTO KRINGDAGEN -->
+  <div style="width:100%;line-height:0;">
+    <img src="kringdagen.JPG" alt="Zwols Bierproevement" style="width:100%;display:block;object-fit:cover;">
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">🍺 Zwols Bierproevement</span>
+        <p>Het jaarlijkse speciaalbier­festival in Warepark De Vrijheid, Zwolle. Georganiseerd door bierliefhebbers, voor bierliefhebbers. Gratis toegang.</p>
+        <div class="social-links">
+          <a class="social-link" href="https://www.facebook.com/p/Zwols-bierproevement-100090082759436/" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/zwols_bierproevement/" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="#over">Over het evenement</a></li>
+          <li><a href="#brouwerijen">Deelnemende brouwerijen</a></li>
+          <li><a href="#masterclass">Masterclass</a></li>
+          <li><a href="#wedstrijd">Hobbybrouw wedstrijd</a></li>
+          <li><a href="#locatie">Locatie</a></li>
+          <li><a href="#faq">Veelgestelde vragen</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@zwolsbierproevement.nl">info@zwolsbierproevement.nl</a></li>
+          <li><a href="https://www.kringdagen.nl">Brouwerij aanmelden</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026 Zwols Bierproevement &mdash; Zwolle</span>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const btn = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+
+    // Close nav on link click (mobile)
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => nav.classList.remove('open'));
+    });
+
+    // Smooth scroll header offset
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const top = target.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ── Hero parallax ──────────────────────────────────────
+    const heroEl = document.querySelector('.hero');
+    let rafPending = false;
+    const doParallax = () => {
+      if (heroEl && window.scrollY < window.innerHeight * 1.5) {
+        heroEl.style.backgroundPosition = `center calc(50% + ${window.scrollY * 0.35}px)`;
+      }
+      rafPending = false;
+    };
+    if (window.innerWidth > 600) {
+      window.addEventListener('scroll', () => {
+        if (!rafPending) { rafPending = true; requestAnimationFrame(doParallax); }
+      }, { passive: true });
+    }
+
+    // ── Scroll-in animations ───────────────────────────────
+    const animTargets = document.querySelectorAll('.brewery-card, .wstep, .stat-card');
+    animTargets.forEach(el => {
+      el.classList.add('animate-in');
+      const siblings = [...el.parentElement.children].filter(c => c.classList.contains(el.classList[0]));
+      const idx = siblings.indexOf(el);
+      el.style.transitionDelay = `${(idx % 3) * 0.1}s`;
+    });
+    const animObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); animObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+    animTargets.forEach(el => animObs.observe(el));
+
+    // Active nav highlight on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.style.color = '');
+          const active = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+          if (active) active.style.color = 'var(--orange)';
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
