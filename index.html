@@ -457,6 +457,25 @@
       grid-column: 2;
     }
 
+    .brewery-days {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: flex;
+      gap: 5px;
+      z-index: 2;
+    }
+    .brewery-day {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 20px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .brewery-day--za { background: var(--orange); color: #fff; }
+    .brewery-day--zo { background: rgba(255,255,255,.2); color: #fff; border: 1px solid rgba(255,255,255,.45); backdrop-filter: blur(4px); }
+
     .brewery-card--teaser {
       border: 2px dashed rgba(44,109,127,.25);
       background: transparent;
@@ -1083,6 +1102,7 @@
         <!-- 1. Brouwerij Allema -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-allema.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Brouwerij Allema</div>
               <div class="brewery-city">Zwolle — Marslanden</div>
@@ -1097,6 +1117,7 @@
         <!-- 2. Axes Castellum -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-axes-castellum.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Axes Castellum</div>
               <div class="brewery-city">Zwolle — Assendorp</div>
@@ -1111,6 +1132,7 @@
         <!-- 3. CO&CO Craft Beers -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-coco-craftbeers.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span><span class="brewery-day brewery-day--zo">Zo 21 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">CO&amp;CO Craft Beers</div>
               <div class="brewery-city">Zwolle</div>
@@ -1125,6 +1147,7 @@
         <!-- 4. Grutte Pier -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-grutte-pier.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span><span class="brewery-day brewery-day--zo">Zo 21 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Grutte Pier Brouwerij</div>
               <div class="brewery-city">Bartlehiem, Friesland</div>
@@ -1139,6 +1162,7 @@
         <!-- 5. Jokkebrok -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-jokkebrok.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Jokkebrok Brouwerij</div>
               <div class="brewery-city">Oldebroek, Gelderland</div>
@@ -1153,6 +1177,7 @@
         <!-- 6. Milky Road Brewery -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-milky-road.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Milky Road Brewery</div>
               <div class="brewery-city">Zeeland, Noord-Brabant</div>
@@ -1167,6 +1192,7 @@
         <!-- 7. Taste of the Wolf -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-taste-of-the-wolves.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Taste of the Wolve</div>
               <div class="brewery-city">Oosterwolde, Gelderland</div>
@@ -1181,6 +1207,7 @@
         <!-- 8. Vikingbeer -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-viking.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Vikingbeer</div>
               <div class="brewery-city">Lelystad</div>
@@ -1195,6 +1222,7 @@
         <!-- 9. De Snor -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-de-snor.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span><span class="brewery-day brewery-day--zo">Zo 21 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Brouwerij De Snor</div>
               <div class="brewery-city">Velp, Gelderland</div>
@@ -1209,6 +1237,7 @@
         <!-- 10. Zwols Brouwtheater -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-brouwtheater.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span><span class="brewery-day brewery-day--zo">Zo 21 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Zwols Brouwtheater</div>
               <div class="brewery-city">Zwolle</div>
@@ -1223,6 +1252,7 @@
         <!-- 11. Huttenkloas -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-huttenkloas.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span><span class="brewery-day brewery-day--zo">Zo 21 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Huttenkloas</div>
               <div class="brewery-city">Albergen, Overijssel</div>
@@ -1237,6 +1267,7 @@
         <!-- 12. Chaos Bieren -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-chaos.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span><span class="brewery-day brewery-day--zo">Zo 21 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Chaos Bieren</div>
               <div class="brewery-city">Wijhe, Overijssel</div>
@@ -1251,6 +1282,7 @@
         <!-- 13. Brouwerij Klein Duimpje -->
         <div class="brewery-card">
           <div class="brewery-card-head" style="background-image:url('brewery-klein-duimpje.jpg')">
+            <div class="brewery-days"><span class="brewery-day brewery-day--za">Za 20 juni</span></div>
             <div class="brewery-head-overlay">
               <div class="brewery-name">Brouwerij Klein Duimpje</div>
               <div class="brewery-city">Hillegom, Zuid-Holland</div>
