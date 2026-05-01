@@ -629,6 +629,42 @@
       margin-bottom: 5px;
     }
 
+    .wstep--done {
+      opacity: 0.55;
+    }
+    .wstep--done .wstep-num {
+      background: #6aab6a;
+      font-size: 18px;
+    }
+
+    .wedstrijd-highlight {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: linear-gradient(135deg, var(--teal), var(--dark));
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 32px;
+      color: var(--white);
+    }
+    .wedstrijd-highlight-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .wedstrijd-highlight-title {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--white);
+    }
+    .wedstrijd-highlight p {
+      font-size: 14px;
+      color: rgba(255,255,255,.85);
+      line-height: 1.6;
+      margin: 0;
+    }
+
     .wstep p {
       font-size: 13px;
       color: var(--gray);
@@ -1305,24 +1341,27 @@
     <div class="container">
       <p class="section-label">Hobbybrouw wedstrijd</p>
       <h2 class="section-title">Brouw jij het beste bier van Zwolle?</h2>
-      <p class="section-intro">Hobbybrouwers uit Zwolle en omgeving meten zich in een eigen wedstrijd. Meld je bier aan en laat het beoordelen door erkende keurmeesters van het BKG.</p>
+      <p class="section-intro">Hobbybrouwers uit Zwolle en omgeving meten zich in een eigen wedstrijd. De inzendingen zijn beoordeeld door erkende keurmeesters van het BKG — op 20 juni weten we wie het beste bier heeft gebrouwen.</p>
 
       <div class="wedstrijd-grid">
         <div class="wedstrijd-info">
           <p>Het Zwols Bierproevement organiseert een hobbybrouw wedstrijd voor thuisbrouwers uit de regio. Jouw bier wordt vakkundig gekeurd door keurmeesters van het <strong style="color:var(--teal)">Bier Keurmeesters Gilde (BKG)</strong> — de organisatie voor het objectief beoordelen van speciaalbieren in Nederland.</p>
           <p>De beste inzendingen worden beloond tijdens het bierproevement. Deelname kost € 7,50 per bier.</p>
-          <div class="wedstrijd-cta">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjNU4oRDkt6t1rmQYIIRyx_olvEDvXKhtSEN5IsqhnjXJGHA/viewform?usp=header" target="_blank" rel="noopener" class="btn btn-primary">Meld je bier aan →</a>
-            <p class="wedstrijd-cta-note">Aanmelden voor 1 mei</p>
+          <div class="wedstrijd-highlight">
+            <div class="wedstrijd-highlight-icon">🏆</div>
+            <div>
+              <div class="wedstrijd-highlight-title">Prijsuitreiking: zaterdag 20 juni om 17:00 uur</div>
+              <p>De winnaars worden bekendgemaakt tijdens het bierproevement. Hobbybrouwers ontmoeten elkaar en wisselen brouwtips uit — een feest voor iedereen die passie heeft voor zelfgebrouwen speciaalbier.</p>
+            </div>
           </div>
         </div>
 
         <div class="wedstrijd-steps">
-          <div class="wstep">
-            <div class="wstep-num">1</div>
+          <div class="wstep wstep--done">
+            <div class="wstep-num">✓</div>
             <div>
-              <div class="wstep-title">Aanmelden</div>
-              <p>Meld je bier aan via het formulier. Geef aan welke bierstijl je hebt gebrouwen en wat jouw bier bijzonder maakt. Na aanmelding ontvang je instructies voor het inleveren van je bier.</p>
+              <div class="wstep-title">Aanmelden — gesloten</div>
+              <p>De aanmeldperiode is verlopen. De deelnemende hobbybrouwers hebben hun bier aangemeld en instructies ontvangen.</p>
             </div>
           </div>
           <div class="wstep">
