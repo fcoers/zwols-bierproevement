@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WC2PC8BQQQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WC2PC8BQQQ');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uitslag Hobbybrouwwedstrijd 2026 - Zwols Bierproevement</title>
+  <meta name="description" content="De volledige uitslag van de hobbybrouwwedstrijd van het Zwols Bierproevement 2026. 30 bieren van 13 brouwers, gekeurd door het Bierkeurmeestersgilde." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:   #2C6D7F;
+      --orange: #F18F00;
+      --dark:   #1a4552;
+      --gray:   #7A7A7A;
+      --white:  #ffffff;
+      --light:  #f4f8f9;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--gray);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ───────────────────────────────────────────── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 999;
+      background: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 72px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.25);
+    }
+
+    .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .logo-img { width: 48px; height: 48px; object-fit: contain; flex-shrink: 0; }
+    .logo-text { color: var(--white); font-weight: 800; font-size: 16px; line-height: 1.2; }
+    .logo-text span {
+      display: block; font-weight: 400; font-size: 12px; opacity: .8;
+      letter-spacing: .05em; text-transform: uppercase;
+    }
+
+    nav { display: flex; align-items: center; gap: 32px; }
+    nav a {
+      color: var(--white); text-decoration: none; font-weight: 600; font-size: 14px;
+      letter-spacing: .05em; text-transform: uppercase; opacity: .9;
+      transition: opacity .2s, color .2s;
+    }
+    nav a:hover { opacity: 1; color: var(--orange); }
+    .nav-ticket {
+      background: var(--orange); color: var(--white) !important; padding: 10px 22px;
+      border-radius: 30px; font-weight: 700 !important; opacity: 1 !important;
+      transition: background .2s, transform .2s !important;
+    }
+    .nav-ticket:hover { background: #d47e00; transform: translateY(-1px); }
+
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; cursor: pointer;
+      background: var(--orange); border: none; padding: 10px; border-radius: 6px;
+    }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; }
+
+    /* ── PAGE BANNER ──────────────────────────────────────── */
+    .banner {
+      background: linear-gradient(135deg, var(--teal) 0%, var(--dark) 100%);
+      padding: 140px 24px 90px;
+      text-align: center;
+      position: relative;
+    }
+
+    .banner-badge {
+      display: inline-block; background: var(--orange); color: var(--white);
+      font-size: 12px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase;
+      padding: 6px 20px; border-radius: 20px; margin-bottom: 20px;
+    }
+
+    .banner h1 {
+      font-size: clamp(30px, 6vw, 56px); font-weight: 800; color: var(--white);
+      line-height: 1.1; margin-bottom: 14px;
+    }
+    .banner h1 em { color: var(--orange); font-style: normal; }
+
+    .banner-sub {
+      font-size: clamp(15px, 2.5vw, 19px); color: rgba(255,255,255,.9);
+      font-weight: 600; max-width: 720px; margin: 0 auto; line-height: 1.6;
+    }
+
+    /* wave */
+    .wave { display: block; width: 100%; overflow: hidden; line-height: 0; }
+    .wave svg { display: block; width: 100%; }
+
+    /* ── SECTION BASE ─────────────────────────────────────── */
+    section { padding: 70px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 12px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase;
+      color: var(--orange); margin-bottom: 12px; text-align: center;
+    }
+    .section-title {
+      font-size: clamp(26px, 4vw, 40px); font-weight: 800; color: var(--teal);
+      margin-bottom: 16px; line-height: 1.15; text-align: center;
+    }
+    .section-intro {
+      font-size: 16px; color: var(--gray); max-width: 720px; line-height: 1.7;
+      margin: 0 auto 8px; text-align: center;
+    }
+
+    /* ── PODIUM ───────────────────────────────────────────── */
+    .podium {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 48px 0 64px;
+      align-items: end;
+    }
+
+    .podium-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: center;
+      box-shadow: 0 8px 28px rgba(44,109,127,.14);
+      border-top: 5px solid var(--teal);
+      position: relative;
+    }
+    .podium-card--gold   { border-top-color: #d4af37; order: 2; transform: translateY(-18px); }
+    .podium-card--silver { border-top-color: #aab2bd; order: 1; }
+    .podium-card--bronze { border-top-color: #c98a4b; order: 3; }
+
+    .podium-medal { font-size: 40px; line-height: 1; margin-bottom: 10px; }
+    .podium-place {
+      font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--orange); margin-bottom: 12px;
+    }
+    .podium-brewer { font-size: 20px; font-weight: 800; color: var(--teal); margin-bottom: 4px; line-height: 1.2; }
+    .podium-type { font-size: 14px; color: var(--gray); font-weight: 600; margin-bottom: 14px; }
+    .podium-points {
+      display: inline-block; background: var(--light); color: var(--teal);
+      font-weight: 800; font-size: 18px; padding: 6px 18px; border-radius: 20px;
+    }
+
+    /* ── RESULTS TABLE ────────────────────────────────────── */
+    .results-wrap {
+      margin-top: 48px;
+      overflow-x: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(44,109,127,.10);
+    }
+
+    table.results {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 560px;
+      background: var(--white);
+    }
+
+    table.results thead th {
+      background: var(--teal);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      text-align: left;
+      padding: 16px 20px;
+      white-space: nowrap;
+    }
+    table.results thead th.col-points,
+    table.results thead th.col-rank { text-align: center; }
+
+    table.results thead th.sortable {
+      cursor: pointer;
+      user-select: none;
+      transition: background .2s;
+    }
+    table.results thead th.sortable:hover { background: var(--dark); }
+
+    table.results thead th .sort-arrow {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 11px;
+      opacity: .4;
+    }
+    table.results thead th.sort-asc  .sort-arrow,
+    table.results thead th.sort-desc .sort-arrow { opacity: 1; color: var(--orange); }
+    table.results thead th.sort-asc  .sort-arrow::after { content: '▲'; }
+    table.results thead th.sort-desc .sort-arrow::after { content: '▼'; }
+    table.results thead th .sort-arrow::after { content: '↕'; }
+
+    table.results tbody td {
+      padding: 14px 20px;
+      font-size: 14px;
+      color: var(--gray);
+      border-bottom: 1px solid rgba(44,109,127,.08);
+      vertical-align: middle;
+    }
+
+    table.results tbody tr:nth-child(even) td { background: var(--light); }
+    table.results tbody tr:hover td { background: rgba(241,143,0,.08); }
+
+    .cell-brewer { font-weight: 700; color: var(--teal); font-size: 15px; }
+    .cell-type { font-weight: 600; }
+    .cell-points {
+      text-align: center;
+      font-weight: 800;
+      color: var(--teal);
+      font-size: 16px;
+      white-space: nowrap;
+    }
+    .cell-rank { text-align: center; }
+
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 34px;
+      padding: 0 8px;
+      border-radius: 18px;
+      background: var(--light);
+      color: var(--teal);
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .rank-badge--1 { background: #d4af37; color: #fff; }
+    .rank-badge--2 { background: #aab2bd; color: #fff; }
+    .rank-badge--3 { background: #c98a4b; color: #fff; }
+
+    /* podium rows subtle tint */
+    tr.row--1 td { background: rgba(212,175,55,.12) !important; }
+    tr.row--2 td { background: rgba(170,178,189,.14) !important; }
+    tr.row--3 td { background: rgba(201,138,75,.12) !important; }
+
+    .table-note {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 16px;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    /* ── BTN ──────────────────────────────────────────────── */
+    .btn {
+      display: inline-block; padding: 14px 34px; border-radius: 30px; font-size: 15px;
+      font-weight: 700; text-decoration: none; letter-spacing: .04em;
+      transition: transform .2s, box-shadow .2s, background .2s; cursor: pointer; border: none;
+    }
+    .btn-primary { background: var(--orange); color: var(--white); box-shadow: 0 4px 20px rgba(241,143,0,.4); }
+    .btn-primary:hover { background: #d47e00; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(241,143,0,.5); }
+
+    .back-cta { text-align: center; margin-top: 56px; }
+
+    /* ── FOOTER ───────────────────────────────────────────── */
+    footer { background: var(--orange); color: var(--white); padding: 60px 24px 32px; }
+    .footer-grid {
+      max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,.25);
+    }
+    .footer-brand .logo-text { color: var(--white); font-size: 20px; margin-bottom: 12px; display: block; }
+    .footer-brand p { font-size: 14px; color: rgba(255,255,255,.8); line-height: 1.7; max-width: 320px; }
+    .footer-col h4 {
+      font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      margin-bottom: 16px; color: rgba(255,255,255,.6);
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a {
+      color: var(--white); text-decoration: none; font-size: 14px; font-weight: 600;
+      opacity: .9; transition: opacity .2s;
+    }
+    .footer-col ul li a:hover { opacity: 1; text-decoration: underline; }
+    .social-links { display: flex; gap: 12px; margin-top: 20px; }
+    .social-link {
+      width: 36px; height: 36px; background: rgba(255,255,255,.2); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; text-decoration: none;
+      font-size: 16px; transition: background .2s;
+    }
+    .social-link:hover { background: rgba(255,255,255,.35); }
+    .footer-bottom {
+      max-width: 1100px; margin: 0 auto; padding-top: 28px; display: flex;
+      justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      font-size: 13px; color: rgba(255,255,255,.7);
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────────── */
+    @media (max-width: 900px) {
+      header { padding: 0 20px; }
+      nav { display: none; }
+      nav.open {
+        display: flex; flex-direction: column; position: fixed; top: 72px; left: 0; right: 0;
+        background: var(--teal); padding: 20px; gap: 16px; border-top: 1px solid rgba(255,255,255,.15);
+        box-shadow: 0 8px 24px rgba(0,0,0,.2);
+      }
+      .hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+
+      .podium { grid-template-columns: 1fr; gap: 18px; }
+      .podium-card--gold   { order: 1; transform: none; }
+      .podium-card--silver { order: 2; }
+      .podium-card--bronze { order: 3; }
+    }
+
+    @media (max-width: 600px) {
+      section { padding: 56px 16px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a class="logo" href="index.html">
+      <img src="Logo Kringdagen.svg" alt="Zwols Bierproevement" class="logo-img">
+      <div class="logo-text">
+        Zwols Bierproevement
+        <span>Zwolle · 2026</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="nav">
+      <a href="index.html#over">Over</a>
+      <a href="index.html#brouwerijen">Brouwerijen</a>
+      <a href="index.html#masterclass">Masterclass</a>
+      <a href="index.html#wedstrijd">Wedstrijd</a>
+      <a href="index.html#locatie">Locatie</a>
+      <a href="index.html" class="nav-ticket">Hoofdpagina</a>
+    </nav>
+  </header>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-badge">Prijsuitreiking · zaterdag 20 juni 2026</div>
+    <h1>Uitslag <em>Hobbybrouwwedstrijd</em></h1>
+    <p class="banner-sub">In totaal werden 30 bieren van 13 brouwers gekeurd door keurmeesters van het Bierkeurmeestersgilde. Dit zijn de resultaten.</p>
+  </section>
+
+  <!-- wave -->
+  <div class="wave" style="background:var(--white)">
+    <svg viewBox="0 0 1440 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C480,50 960,0 1440,50 L1440,0 L0,0 Z" fill="#2C6D7F"/>
+    </svg>
+  </div>
+
+  <!-- UITSLAG -->
+  <section>
+    <div class="container">
+      <p class="section-label">De prijswinnaars</p>
+      <h2 class="section-title">Het podium</h2>
+      <p class="section-intro">De prijzen gaan naar de drie bieren met de hoogste score.</p>
+
+      <div class="podium">
+        <div class="podium-card podium-card--gold">
+          <div class="podium-medal">🥇</div>
+          <div class="podium-place">1e prijs</div>
+          <div class="podium-brewer">Erik de Roode</div>
+          <div class="podium-type">Sterke Saison</div>
+          <div class="podium-points">89 punten</div>
+        </div>
+        <div class="podium-card podium-card--silver">
+          <div class="podium-medal">🥈</div>
+          <div class="podium-place">2e prijs</div>
+          <div class="podium-brewer">Frits Coers</div>
+          <div class="podium-type">Kölsch</div>
+          <div class="podium-points">86 punten</div>
+        </div>
+        <div class="podium-card podium-card--bronze">
+          <div class="podium-medal">🥉</div>
+          <div class="podium-place">3e prijs</div>
+          <div class="podium-brewer">Gerrit Grolleman</div>
+          <div class="podium-type">Dubbel</div>
+          <div class="podium-points">85 punten</div>
+        </div>
+      </div>
+
+      <p class="section-label">De volledige uitslag</p>
+      <h2 class="section-title">Alle 30 bieren</h2>
+      <p class="section-intro">Gesorteerd op aantal punten, van hoog naar laag.</p>
+
+      <div class="results-wrap">
+        <table class="results">
+          <thead>
+            <tr>
+              <th class="col-brewer sortable" data-key="brewer" data-type="text" scope="col">Brouwer<span class="sort-arrow"></span></th>
+              <th class="col-type sortable" data-key="type" data-type="text" scope="col">Biertype<span class="sort-arrow"></span></th>
+              <th class="col-points sortable sort-desc" data-key="points" data-type="num" data-default="desc" scope="col">Punten<span class="sort-arrow"></span></th>
+              <th class="col-rank sortable" data-key="rank" data-type="num" data-default="asc" scope="col">Rangorde<span class="sort-arrow"></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row--1">
+              <td class="cell-brewer">Erik de Roode</td><td class="cell-type">Sterke Saison</td><td class="cell-points">89</td><td class="cell-rank"><span class="rank-badge rank-badge--1">1</span></td>
+            </tr>
+            <tr class="row--2">
+              <td class="cell-brewer">Frits Coers</td><td class="cell-type">Kölsch</td><td class="cell-points">86</td><td class="cell-rank"><span class="rank-badge rank-badge--2">2</span></td>
+            </tr>
+            <tr class="row--3">
+              <td class="cell-brewer">Gerrit Grolleman</td><td class="cell-type">Dubbel</td><td class="cell-points">85</td><td class="cell-rank"><span class="rank-badge rank-badge--3">3</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Erik de Roode</td><td class="cell-type">Vrije klasse – Citrusgarden (blonde ale)</td><td class="cell-points">84</td><td class="cell-rank"><span class="rank-badge">4</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Gerrit Grolleman</td><td class="cell-type">Quadrupel</td><td class="cell-points">84</td><td class="cell-rank"><span class="rank-badge">4</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Meindert Boom</td><td class="cell-type">Vrije klasse – Weizen met kruiden</td><td class="cell-points">83</td><td class="cell-rank"><span class="rank-badge">6</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Pim &amp; Chris van Baal</td><td class="cell-type">Russian Imperial Stout</td><td class="cell-points">81</td><td class="cell-rank"><span class="rank-badge">7</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Frits Coers</td><td class="cell-type">Dubbelbock</td><td class="cell-points">80</td><td class="cell-rank"><span class="rank-badge">8</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Raymond Oosterwijk</td><td class="cell-type">Brettanomyces Blond</td><td class="cell-points">80</td><td class="cell-rank"><span class="rank-badge">8</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Harm Mulder</td><td class="cell-type">Tripel</td><td class="cell-points">79</td><td class="cell-rank"><span class="rank-badge">10</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Jan Schraa</td><td class="cell-type">Meibock</td><td class="cell-points">79</td><td class="cell-rank"><span class="rank-badge">10</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Pim &amp; Chris van Baal</td><td class="cell-type">Session IPA</td><td class="cell-points">78</td><td class="cell-rank"><span class="rank-badge">12</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Raymond Oosterwijk</td><td class="cell-type">Baltic Porter</td><td class="cell-points">78</td><td class="cell-rank"><span class="rank-badge">12</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Kees Oudshoorn</td><td class="cell-type">Quadrupel</td><td class="cell-points">78</td><td class="cell-rank"><span class="rank-badge">12</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Jan Schraa</td><td class="cell-type">Irish Red Ale</td><td class="cell-points">78</td><td class="cell-rank"><span class="rank-badge">12</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Erik de Roode</td><td class="cell-type">Vrije klasse – Roggewijn</td><td class="cell-points">77</td><td class="cell-rank"><span class="rank-badge">16</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Ton van Gelder</td><td class="cell-type">Blond(e)</td><td class="cell-points">76</td><td class="cell-rank"><span class="rank-badge">17</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Harm Mulder</td><td class="cell-type">Meibock</td><td class="cell-points">75</td><td class="cell-rank"><span class="rank-badge">18</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Bauke Venema</td><td class="cell-type">Meibock</td><td class="cell-points">74</td><td class="cell-rank"><span class="rank-badge">19</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Marcel Veldink</td><td class="cell-type">Tripel (op hout)</td><td class="cell-points">74</td><td class="cell-rank"><span class="rank-badge">19</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Ton van Gelder</td><td class="cell-type">Bohemian Dark Lager</td><td class="cell-points">73</td><td class="cell-rank"><span class="rank-badge">21</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Marcel Veldink</td><td class="cell-type">Tripel (op hout)</td><td class="cell-points">73</td><td class="cell-rank"><span class="rank-badge">21</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Harry Lenis</td><td class="cell-type">Dubbel</td><td class="cell-points">72</td><td class="cell-rank"><span class="rank-badge">23</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Meindert Boom</td><td class="cell-type">IPA (USA)</td><td class="cell-points">71</td><td class="cell-rank"><span class="rank-badge">24</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Bauke Venema</td><td class="cell-type">Dubbel</td><td class="cell-points">70</td><td class="cell-rank"><span class="rank-badge">25</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Pim &amp; Chris van Baal</td><td class="cell-type">Dubbelbock</td><td class="cell-points">70</td><td class="cell-rank"><span class="rank-badge">25</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Erik de Roode</td><td class="cell-type">Vrije klasse – Roodvonk (rotbier)</td><td class="cell-points">69</td><td class="cell-rank"><span class="rank-badge">27</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Gerrit Grolleman</td><td class="cell-type">American Pale Ale</td><td class="cell-points">69</td><td class="cell-rank"><span class="rank-badge">27</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Harm Mulder</td><td class="cell-type">Tripel IPA</td><td class="cell-points">67</td><td class="cell-rank"><span class="rank-badge">29</span></td>
+            </tr>
+            <tr>
+              <td class="cell-brewer">Ton van Gelder</td><td class="cell-type">American Pale Ale</td><td class="cell-points">63</td><td class="cell-rank"><span class="rank-badge">30</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="table-note">Bij een gelijk aantal punten delen bieren dezelfde rangorde. Proost en bedankt aan alle deelnemers! 🍺</p>
+
+      <div class="back-cta">
+        <a href="index.html" class="btn btn-primary">Terug naar de hoofdpagina</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">🍺 Zwols Bierproevement</span>
+        <p>Het jaarlijkse speciaalbier­festival in Warepark De Vrijheid, Zwolle. Georganiseerd door bierliefhebbers, voor bierliefhebbers. Gratis toegang.</p>
+        <div class="social-links">
+          <a class="social-link" href="https://www.facebook.com/p/Zwols-bierproevement-100090082759436/" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com/zwols_bierproevement/" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html#over">Over het evenement</a></li>
+          <li><a href="index.html#brouwerijen">Deelnemende brouwerijen</a></li>
+          <li><a href="index.html#masterclass">Masterclass</a></li>
+          <li><a href="index.html#wedstrijd">Hobbybrouw wedstrijd</a></li>
+          <li><a href="index.html#locatie">Locatie</a></li>
+          <li><a href="index.html#faq">Veelgestelde vragen</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@zwolsbierproevement.nl">info@zwolsbierproevement.nl</a></li>
+          <li><a href="https://www.kringdagen.nl">Brouwerij aanmelden</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Copyright &copy; 2026 Zwols Bierproevement &mdash; Zwolle</span>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const btn = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => nav.classList.remove('open'));
+    });
+
+    // ── Sorteerbare tabel ──────────────────────────────────
+    (() => {
+      const table = document.querySelector('table.results');
+      if (!table) return;
+      const tbody = table.tBodies[0];
+      const headers = [...table.querySelectorAll('th.sortable')];
+
+      const getVal = (row, key, type) => {
+        let el;
+        if (key === 'brewer') el = row.querySelector('.cell-brewer');
+        else if (key === 'type') el = row.querySelector('.cell-type');
+        else if (key === 'points') el = row.querySelector('.cell-points');
+        else el = row.querySelector('.cell-rank .rank-badge');
+        const txt = (el ? el.textContent : '').trim();
+        return type === 'num' ? parseFloat(txt) : txt;
+      };
+
+      const sortBy = (th) => {
+        const key = th.dataset.key;
+        const type = th.dataset.type;
+        // Toggle: if already active, flip; else default (desc for numbers, asc for text)
+        let dir;
+        if (th.classList.contains('sort-asc')) dir = 'desc';
+        else if (th.classList.contains('sort-desc')) dir = 'asc';
+        else dir = th.dataset.default || (type === 'num' ? 'desc' : 'asc');
+
+        headers.forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(dir === 'asc' ? 'sort-asc' : 'sort-desc');
+
+        const rows = [...tbody.rows];
+        const factor = dir === 'asc' ? 1 : -1;
+        rows.sort((a, b) => {
+          const va = getVal(a, key, type);
+          const vb = getVal(b, key, type);
+          let cmp;
+          if (type === 'num') cmp = va - vb;
+          else cmp = va.localeCompare(vb, 'nl', { sensitivity: 'base' });
+          return cmp * factor;
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      };
+
+      headers.forEach(th => th.addEventListener('click', () => sortBy(th)));
+    })();
+  </script>
+</body>
+</html>
