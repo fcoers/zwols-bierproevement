@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Zwols Bierproevement//NL
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:zwols-bierproevement-2027@zwolsbierproevement.nl
+DTSTAMP:20260923T120000Z
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270621
+SUMMARY:Zwols Bierproevement
+LOCATION:Warepark De Vrijheid\, Zwolle
+URL:https://zwolsbierproevement.nl
+END:VEVENT
+END:VCALENDAR
